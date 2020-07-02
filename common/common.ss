@@ -31,3 +31,18 @@
 (define (average a b)
             (/ (+ a b) 2)
 )
+
+(define (print_rat r)
+	(newline)
+	(display (numer r))
+	(display "/")
+	(display (denom r))
+)
+
+(define (numer x)
+	(car x)
+)
+
+(define (denom x)
+	(cdr x)
+)
